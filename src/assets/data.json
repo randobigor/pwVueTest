@@ -1,0 +1,59 @@
+{
+    "values": [
+        {
+            "x": 4,
+            "y": 3
+        },
+        {
+            "x": 4,
+            "y": 52
+        },
+        {
+            "x": 14,
+            "y": 54
+        },
+        {
+            "x": 24,
+            "y": 52
+        },
+        {
+            "x": 47,
+            "y": 85
+        },
+        {
+            "x": 41,
+            "y": 15
+        },
+        {
+            "x": 456,
+            "y": 512
+        }
+    ],
+    "students":[
+        {
+            "name": "Igor",
+            "surname": "Bodnar",
+            "average": 9.5
+        },
+        {
+            "name": "Victor",
+            "surname": "Emciuc",
+            "average": 9.4
+        },
+        {
+            "name": "Crihan",
+            "surname": "Mihai",
+            "average": 10
+        },
+        {
+            "name": "Anton",
+            "surname": "Chiverciuk",
+            "average": 8
+        },
+        {
+            "name": "Maxim",
+            "surname": "Grajdianu",
+            "average": 10
+        }
+    ]
+}
