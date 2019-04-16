@@ -1,0 +1,7 @@
+<section class="output">
+  <div class="container">
+    <h1 v-if="valueX != '' && valueY != ''">{{ valueX }} + {{ valueY }} = {{ parseFloat(valueX) + parseFloat(valueY) }}</h1>
+    <b-alert v-else show variant="danger">Похоже вы не ввели никаких чисел для суммы :/</b-alert>
+  </div>
+</section>
+
