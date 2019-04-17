@@ -1,9 +1,8 @@
-import $ from 'jquery'
 export default {
   name: 'students',
   components: {},
   props: [],
-  data () {
+  data() {
     return {
       students: [],
       fields: [
@@ -26,12 +25,14 @@ export default {
   computed: {
 
   },
-  mounted () {
-    $.getJSON('http://localhost:3000/students', data => {
-      this.students = data
-    })
+  mounted() {
+    this.getData()
   },
   methods: {
-
+    getData() {
+      this.$http.get('http://localhost:3000/students').then(response => {
+        this.students = response.body
+      });
+    }
   }
 }

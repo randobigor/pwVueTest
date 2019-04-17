@@ -1,4 +1,3 @@
-import $ from 'jquery'
 export default {
   name: 'results',
   components: {},
@@ -13,10 +12,11 @@ export default {
 
   },
   mounted () {
-    $.getJSON('http://localhost:3000/values', data => {
-      this.data = data
-    })
+    this.getResults()
   },
   methods: {
+    getResults() {
+      this.$http.get('http://localhost:3000/values').then(data => this.data = data.body)
+    }
   }
 }
